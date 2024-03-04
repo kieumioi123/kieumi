@@ -1,0 +1,147 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+
+h2 {
+  text-align: justify;
+  margin-top: 100px;
+}
+
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.tags a {
+  background-color: #8fce00;
+  color: white;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+
+.sanpham {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+.sanpham a {
+  background-color: Black;
+  color: white;
+  padding: 5px 15px;
+  margin: 5px;
+  border-radius: none;
+  text-decoration: none;
+}
+.sanpham a:hover {
+  background-color: blue;
+}
+
+.box{
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto; 
+  padding: 20px;
+  background-color: #ebebeb;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.email-input{
+    padding: 10px;
+    border: 1px solid #e0eeee;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.submit {
+  background-color: blue;
+  color: white;
+  margin: 5px;
+  padding: 10px 15px;
+  border: none;
+}
+
+
+.text {
+ text-align: center;
+ color: white;
+ background-image: url('https://cdn.glitch.global/4638c9dc-6f4b-4baa-b1a2-1be9b6add44c/Untitled-1.png?v=1709477436582');
+ padding: 20px;
+ width: 600px;
+ height: 150px;
+ margin: 0 auto;
+}
+
+.title{
+  font-size: 12px; 
+  text-shadow: 1px 1px 1px #bdb9b9; 
+  margin-top: 30px;
+  
+}
+
+.subtitle{
+  font-size: 8px; 
+  margin-top: 20px;
+}
+
+.dangky{
+  padding: 8px 10px;
+  margin-top: 5px;
+  background-color: red;
+  color: white;
+  border: none;
+  font-size: 9px;
+  margin-bottom: 100px;
+}
+
+
+
+.noidung {
+    display: flex;
+    justify-content: space-around;
+    width: 600px;
+    height: 200px;
+    background-image: url('https://c.pxhere.com/photos/5e/e5/astronomy_constellation_dark_moon_nature_night_outdoors_scenic-1558489.jpg!d');
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+.info {
+    text-align: center;
+    margin-top: 50px;
+  } 
+.yl{
+  color: yellow;
+  font-size: 10px;
+  margin-top: 10px;
+}
+
+.numb{
+    color: white;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+
