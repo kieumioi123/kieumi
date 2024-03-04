@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style> 
+      body {backgroud-image:https://i.pinimg.com/564x/ee/32/76/ee327657758ac74294cc5a9d7074a8fc.jpg;}
+    </style>
+    
+    <title>Chào mừng bạn đến với trang Web cá nhân của tôi</title>
+    <meta charset ="UTF-8"
+    <meta name="Home description" content="Home"> <!--mo ta trag web-->
+    <meta name="keywords" content="Home cac keywords de de tim Web cua minh (1 tu, 2 tu)">
+    <meta name="author" content="tac gia viet trang nay">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+                                                                          
+                                                                          
+    <img width="300" src="https://i0.wp.com/thatnhucuocsong.com.vn/wp-content/uploads/2022/09/Hinh-anh-meo-cute-ngo-nghin.jpg?ssl=1"/>
+    
+    <br>
+    <video autoplay muted loop src="https://cdn.glitch.global/4638c9dc-6f4b-4baa-b1a2-1be9b6add44c/188595%20(1080p).mp4?v=1705754630344" width="300" height="200"></video>
+    <h2>
+      Web cá nhân
+    </h2>
+  </head>
+  <body>
+    
+    <h3>
+      Giới thiệu bản thân:
+    </h3>
+    
+     <div>
+      <p>Sở thích:</p>
+      <ul>     
+        <li>Xem phim</li>
+        <li>Chơi game</li>
+        <li>Nghe nhạc</li>
+      </ul>
+      <p>Tính cách:</p>
+      <ul>
+        <li>Ít nói</li>
+        <li>Trầm tính</li>
+        <li>Thích 1 mình</li>
+      </ul>
+    </div>
+      
+    <fotter>
+      <h3>
+          Thông tin liên lạc của tôi
+      </h3>
+      <ol>
+        <li>email:...</li>
+        <li>fb:<a href="https://www.facebook.com/anh.ky.7503314/"> fb của tôi</a></li>
+      </ol>
+    </fotter>
+    
+   <div>
+        <h3>Hãy đặt câu hỏi cho tôi</h3>
+    <from>
+        <input type="text" placeholder="Điền câu hỏi của bạn"/>
+        <button> Gửi câu hỏi</button>
+    </from>
+    </div> 
+      
+    <h3>
+      Thông tin của bạn
+    </h3>
+      <form>
+        <div>
+          <label>Điền thông tin của bạn</label>
+          <input type="text" placeholder="Tên của bạn"/>
+        </div>
+        
+        <div>
+          <label>Giới tính</label>
+            <select>
+              <option>Nam</option>
+              <option>Nữ</option>
+              <option>Unisex</option>
+            </select>
+        </div>
+        
+        <div>
+          <label>Nghề nghiệp của bạn là gì?</label>
+          <input type="text" placeholder="Nghề nghiệp"/>
+        </div>
+        <div>
+          <label>Bạn có người yêu chưa?</label>
+        </div>
+            <input type="radio" name="Người yêu"/> Chưa có
+            <input type="radio" name="Người yêu"/> Có rồi
+      </form>
+   
+</body>
+
+
+
+
