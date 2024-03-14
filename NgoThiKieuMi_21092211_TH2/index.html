@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- 
+      This is an HTML comment
+      You can write text in a comment and the content won't be visible in the page
+    -->
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+</head>
+<!--Bai 1-->
+  
+  <body> <center>  
+  <h2>
+   Giải phương trình bậc I
+   </h2>
+    <div class="container">
+   
+      <form id="Giaipt">
+      <input type="number" placeholder="Hệ số a" id="a" required><br>
+      <input type="number" placeholder="Hệ số b" id="b" required><br>
+      <input type="submit" value="Giải phương trình"> 
+      </form>
+   
+      <div id="result"></div>
+   
+    </div>
+    
+   <script>document.getElementById("Giaipt").addEventListener("submit", function(event) {event.preventDefault();
+   
+    var a = parseFloat(document.getElementById("a").value);
+    var b = parseFloat(document.getElementById("b").value);                                      
+    
+    if (isNaN(a) || isNaN(b)) {
+      document.getElementById("result").textContent = "Vui lòng nhập số hợp lệ";
+      return;
+    } 
+    if (a===0) {
+      if (b===0) {
+        document.getElementById("result").textContent = "Phương trình vô số nghiệm";
+        } else {
+          document.getElementById("result").textContent = "Phương trình vô nghệm";
+        }
+      return;
+    }    
+       var x = -b/a;  document.getElementById("result").textContent = "Nghiệm của phương trình là x = " + x.toFixed(1);                                                                        
+      })</script> </center>
+    </body>
+
+  <!--Bai2--> 
+    <!DOCTYPE html>
+<html>
+<head>
+    <title>Đóng góp ý kiến sản phẩm</title>
+</head>
+<body>
+    
+        <center>
+          <div>
+            <h2 style="color:purple">ĐÓNG GÓP Ý KIẾN VỀ SẢN PHẨM</h2>
+       <p style="font-size: 12px">
+         Gợi ý của bạn sẽ được chúng tôi xem xét, vui lòng nhập tiếng  Việt có dấu <br>
+      Các ý kiến đóng nên viết chi tiết rõ ràng, kèm theo các minh chứng xác thực thời gian và địa điểm (nếu có)</p> </div></center>
+      <div class="container"> 
+         <form action="#" method="post">
+            <div class="input-group">
+                <label for="input-name">Họ và tên:</label>
+                <input type="text" id="input-name" required>
+            </div>
+            <div class="input-group">
+                <label for="input-card">Mã thẻ:</label>
+                <input type="text" id="input-card" required>
+            </div>
+            <div class="input-group">
+                <label for="input-phone">Số điện thoại:</label>
+                <input type="tel" id="input-phone" required>
+            </div>
+            <div class="input-group">
+                <label for="input-email">Email:</label>
+                <input type="email" id="input-email" required>
+            </div>
+            <div class="input-group">
+                <label for="input-customer-type">Loại khách hàng:</label>
+                <select id="input-customer-type" required>
+                    <option value="">Chọn loại khách hàng</option>
+                    <option value="vip">VIP</option>
+                    <option value="regular">Regular</option>
+                    <option value="new">New</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="input-invoice">Mã hoá đơn:</label>
+                <input type="text" id="input-invoice">
+            </div>
+            <div class="input-group">
+                <label for="input-description">Chi tiết mô tả:</label>
+                <textarea id="input-description" required></textarea>
+            </div>
+            <button class="btn" type="submit">Gửi ý kiến</button>
+        </form>
+    </div>
+</body>
+</html>
+  
+  
+<!--Bài3-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên Hệ</title>
+  <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <div class="container">
+        <h1 style="color: blue">Liên Hệ</h1>
+        <div class="contact">
+          <h2>Thông tin</h2>
+            <p class="contact-info">🏡<span style="color: gray;">KP6,P.Linh Trung, TP. Thủ Đức, TP. HCM</span></p>
+            <p class="contact-info">✉<span style="color: gray;">info@uit.edu.vn</span></p>
+            <p class="contact-info">📞<span style="color: gray;">+84 28 372 52002</span></p>
+          <h4 style="color: Purple">Hãy liên lạc với chúng tôi bất cứ khi nào!!!</h4>
+        </div>
+        <form id="contactForm">
+            <input type="text" id="name" name="name" placeholder="Họ và tên">
+            <input type="email" id="email" name="email" placeholder="Địa chỉ email">
+            <input type="text" id="subject" name="subject" placeholder="Tiêu đề bài viết">
+            <textarea id="message" name="message" placeholder="Nội dung cần gửi"></textarea>
+            <button type="submit">GỬI TIN NHẮN</button>
+        </form> 
+    </div>
+    <script src="script.js"></script>    
+</body>
+</html>
+
+<!--Bài4-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tính chỉ số BMI</title>
+ <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <div class="container">
+        <h1>Tính chỉ số BMI</h1>
+       
+        <label for="weight">Nhập cân nặng:</label>
+        <input type="number" id="weight" placeholder="Nhập cân nặng (kg)" required>
+        
+        <label for="height">Nhập chiều cao:</label>
+        <input type="number" id="height" placeholder="Nhập chiều cao (m)" required>
+      
+      <label for="age">Chọn loại tuổi:</label>
+        <select id="age" required>
+            <option value="tre-em">Trẻ em</option>
+            <option value="trung-nien">Trung niên</option>
+            <option value="gia-lon-tuoi">Già, lớn tuổi</option>
+        </select>
+      
+      <button2 onclick="calculateBMI()">Tính BMI</button2>
+     
+       <div>
+            <h2>KẾT QUẢ</h2>
+          <p id="bmiResult"></p>
+        </div>
+    </div>
+    <script src="script.js"></script> 
+</body>
+</html>
+
+<!--Bài 5-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Đăng nhập</title>
+ <link rel="stylesheet" href="style.css">   
+</head>
+<body>
+    <div class="container">
+        <h1>Login</h1>
+        <div class="input-container">
+            <input type="text" id="username" placeholder="👤UserName" required>
+        </div>
+        <div class="input-container">
+            <input type="password" id="password" placeholder="🔑Password" required>
+        </div>
+        <button class="button5" onclick="login()">
+            <span>🔒</span>
+        </button>
+    </div>
+    <script src="script.js"></script> 
+</body>
+</html>
+
+<!--Bài 6-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Đăng nhập</title>
+ <link rel="stylesheet" href="style.css"> 
+ <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+    <div class="wrapper">
+      <form action="#" id="form-login">
+        <h1>Log in</h1>
+        <p style="color: grey; font-size: 14px; margin-bottom: 20px">Login here using your username and password</p>
+        <div class="form-group">
+            <input type="text" placeholder="👤Username" required>
+        </div>
+        <div class="form-group">
+            <input type="password" placeholder="🔑Password" required>
+        </div>
+        <input class="form-submit" type="submit" value="Log in">
+        
+        <p class="forgot-password">Forgot Password</p>
+        <div class="input-container">
+            <input type="button" value="Sign Up" class="sign-up">
+        </div>
+      </form>
+    </div>
+    <script src="script.js"></script>   
+</body>
+</html>
+
+
+  
+  
