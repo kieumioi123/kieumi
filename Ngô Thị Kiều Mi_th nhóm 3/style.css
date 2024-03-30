@@ -1,0 +1,179 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding:0;
+  justify-content: center;
+}
+
+.container{
+  width: 100%;
+  max-width: 400;
+  margin: 0 auto;
+  padding: 20px;
+  justify-content: center;
+}
+
+h2{
+  text-align:  center;
+}
+
+textare{
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid pink;
+  border-radius: 4px;
+  resize: none;
+}
+
+input [type="submit"]{
+  width: 100%;
+  background-color: pink;
+  color: white;
+  padding: 10px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+input [type="submit"]: hover{
+  background-color: blue;
+}
+
+
+
+.container_login{
+    width: 300px;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid pink;
+}
+
+.form-login i {
+    position: absolute;
+}
+
+.form-login >i{
+    padding: 17px;
+    min-width: 40px;
+}
+
+.button{
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+.forgot-btn{
+    padding: 10px;
+    background-color: black;
+    color: white;
+    margin: 10px;
+}
+.login-btn{
+  background-color: black;
+  color: white;
+  margin: 10px;
+  padding: 10px;
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+.footer{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-flow: row wrap;  
+    padding: 50px;
+    color: #fff;
+    background-color: #25242a; 
+}
+.footer > *{
+    flex: 1 100%;
+}
+.letf-area{
+    margin-right: -12em ;
+}
+.footer-bottom img{
+    width: 15%;
+}
+h3{
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: pink;
+    letter-spacing: 3px;
+}
+.footer ul{
+    list-style: none;
+    padding-left: 0;
+}
+.footer li{
+    line-height: 2em;
+}
+.footer a{
+    text-decoration: none;
+}
+.right-area{ 
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-wrap: row wrap;  
+}
+.right-area > *{
+    flex: 1 50%;
+    margin-right: 1.25em;
+}
+.box a{
+    color: #999;
+}
+.footer-botom{
+    text-align: center;
+    color: #999;
+    padding-top: 50px;
+}
+.letf-area p{
+    padding-right: 20%;
+    color: #999;
+}
+.btn{
+   border: none;
+   background: blue;
+   color: #fff;
+   padding: 10px 30px; 
+}
+.search-box input{
+    height: 36px;
+}
+@media screen and (min-width: 600px){
+    .right-area > *{
+        flex: 1;
+    }
+    .letf-area{
+        flex: 1 0px;
+    }
+    .right-area{
+        flex: 2 0px;
+    }
+}
+@media screen and {max-width:600px){
+    .footer{
+        padding:15px;
+    }
+    .main {
+        font-size: 55px;
+    } 
+}

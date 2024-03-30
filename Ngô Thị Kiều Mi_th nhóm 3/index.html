@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kiểm Tra</title>
+    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="/wedtoan/bt/style1.css">
+  </head>
+  
+<body>
+  <div class="container">
+    <h2>
+      Đánh giá
+    </h2>
+    <form action="submit_review" method="post">
+      <textarea id="review" name="review" rows="4" required></textarea>
+      <input type="submit" value="GỬI ĐÁNH GIÁ">
+    </form>
+  </div>
+  
+
+<h2>
+  Hiển thị ngày giờ hiện tại
+  </h2>
+  <p id="currentDateTime"> </p>
+ <script>
+ function displayCurrentTime(){
+   var now = new Date();
+   var date= now.toLocaleDateString();
+   var time= now.toLocaleTimeString();
+   document.getElementById('currentDateTime').innerHTML = date + ' ' +time;
+ }
+    setInterval(displayCurrentTime, 1000);
+  </script>
+
+  <div class= "container_login">
+<h2>Login</h2>
+        <p>Login here using your username and password</p>
+        <form action="" class="form-login">
+            <i class="fa fa-user icon"></i>
+            <input type="text" id="username"><br>
+            <i class="fa fa-instagram icon"></i>
+            <input type="password" id="password">
+        </form>
+        <div class="button">
+            <span class="forgot-btn">
+                Forgot 
+            </span>
+            <span class="login-btn">
+                Sign up
+            </span>
+        </div>
+    </div>
+  
+  
+
+    <footer class="footer">
+      <div class="letf-area">
+      <h3>contact</h3>
+      <ul class="box">
+         <li>577 Nguyễn thái Sơn </li>
+         <li>phường 5, Gò Vấp </li>
+         <li>thành phố Hồ Chí Minh</li>
+         <li>phanthuw1310@gmail.com</li>
+         <li> 0383574723</li>
+      </ul>
+            </div>
+<ul class="right-area">
+  <li class="link-area">
+  <h3>
+    Liên kết hữu ích</h3>
+    <ul class="box h-box">
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Pricing</a></li>
+      <li><a href="#">Tickets</a></li>
+      <li><a href="#">Policy</a></li>
+      <li><a href="#">Terms</a></li>
+
+      </ul>
+  </li>
+  <li>
+    <h3> Bài đăng gần đây</h3>
+    <ul>
+      <div class="box">
+      <li><a href="#"> Món chay</a></li>
+      <li><a href="#"> Món mặn</a></li>
+      <li><a href="#"> Thức uống</a></li>
+      <li><a href="#"> Món ăn vặt </a></li>
+      <li><a href="#"> Món ăn sáng</a></li>
+      <li><a href="#"> Món ăn cho bé </a></li>
+    </ul>
+ 
+    <h3>Bản tin</h3>
+    <form action="" class="form-search">
+          <div class="search-box">
+            <input type="text" name="" id="">
+            <button class="btn" type="submit">Search</button>
+      </div>
+    </form>
+  </li>
+      </ul>
+      <div class="footer-bottom">
+        <img src="/wedtoan/bt/logo.png" alt="">
+        <p> All Right recived by copy; creativo 2024</p>
+      </div>
+    </footer>
+
+</body>
+</html>
