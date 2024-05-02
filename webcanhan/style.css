@@ -1,0 +1,258 @@
+/*header*/
+
+*{
+  margin:0;
+  padding:0;
+  font-family: roboto, sans-serif;
+  box-sizing: border-box;
+}
+
+body{
+	width: 100%;
+	height: auto;
+	justify-content: center;
+	align-items: center;
+}
+
+.navbar{
+  width:100%;
+  margin-bottom: 20px;
+  position: relative; 
+  z-index: 2;
+}
+.navbar .navbar-header{
+  background: #98B5AE;
+  width: 100%;
+}
+.header-menu{
+  display: flex;
+  width: 98%;
+  padding-right: 10px;
+  padding-left: 10px;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  margin: 0 auto;
+}
+.logo-team{
+  padding-top: 5px;
+}
+
+.header-menu-name{
+  margin-left: 30%;
+  margin-right: 7px;
+}
+.header-menu-name ul{
+  display: flex;
+  height: auto ;
+  overflow: visible;
+}
+.header-menu-name ul li{
+  display: inline-block;
+  list-style: none;
+}
+.header-menu-name ul li a{
+  padding: 6px 10px;
+  font-weight: 600;
+  font-size: 15px;
+  vertical-align: middle;
+  margin-bottom: 5px;
+  color: White;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.header-menu-name ul li a:hover{
+   color: black;
+}
+
+.header-menu-name button{
+  background: #e28743;
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  font-weight: 600;
+  margin-left: 30px;
+  cursor: pointer;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+.header-menu-name:hover button{
+ opacity: 0.8
+}
+
+.banner {
+  background-image: url(https://cdn.glitch.global/6ac803cf-c602-435d-8941-66118fa9851c/Hello.png?v=1714665001135);
+  background-size: cover;
+  background-position: center bottom;
+  margin-top: -30px;
+  height: 500px;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.container{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  perspective: 20px;
+  overflow: hidden;
+  display: flex;
+  font-family: sans-serif;
+  text-decoration: none;
+  background: #eeeee4;
+}
+
+.parallax{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+.content{
+  width: 500px;
+  height: 400px;
+  margin-left: 200px;
+}
+
+.gmail{
+  background: #e28743;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  width: 100%;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  color: white;
+  white-space: nowrap;
+  transition: all .2s ease;
+  text-decoration: none;
+}
+
+.gmail:hover{
+  background: #eab676;
+  background: linear-gradient( to right,#e28743,#eab676);
+  color: white;
+  text-decoration: none;
+  transform: 1.5s;
+}
+
+.card{
+  margin: 120px auto;
+  width: 300px;
+  height: 400px;
+  background: #98B5AE;
+  padding: 20px;
+  border-radius: 15px;
+  color: white;
+  position: relative;
+  font-family: 'Lobster Two', sans-serif;
+
+}
+
+.card_heart, .card_cart {
+  font-size: 25px;
+  position: absolute;
+  left: 20px;
+  top: 15px;
+  cursor: pointer;
+}
+
+.card_cart{
+  left: unset; 
+  right: 20px;
+}
+
+.card_img {
+  width: 90%;
+  transition:0.5s;
+
+}
+
+.card_img img{
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  
+}
+
+.card_title{
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  transition: 0.5s;
+  
+}
+
+.card_size, .card_color{
+  display: flex;
+  align-items:center;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.card_size p{
+  padding: 1px 10px;
+  background: none;
+  color: white;
+  font-size: 20px;
+  border-radius: 5px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+
+.card_color p{
+  padding: 1px 10px;
+  background: none;
+  color: white;
+  font-size: 20px;
+  border-radius: 5px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+
+.card:hover  .card_img{
+  transform: translateY(-90px) rotate(-20deg);
+  
+}
+
+.card:hover .card_title{
+  transform: translate(-35px, -70px);
+  
+}
+
+.card_size{
+  margin-top: 150px;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.card_size, 
+.card_color, 
+.card_action{
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+  transition-delay: 0.4s;
+  
+}
+
+.card:hover .card_size,
+.card:hover .card_color,
+.card:hover .card_action{
+  visibility: visible;
+  opacity: 100;
+  
+}
+
+.card:hover .card_size{
+  margin-top: -30px;
+}
